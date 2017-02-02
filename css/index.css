@@ -1,0 +1,355 @@
+
+html, body {
+	padding: 0;
+	margin: 0px ;
+  overflow-x: hidden;
+	font-family: "Arial Black";
+}
+/*----HEADER----*/
+.header {
+text-align: center;
+background: gray url("../images/Header/headerimg1.jpg") no-repeat center center;
+height: 626px;
+font-family: monospace;
+color: limegreen;
+text-shadow: 1px 1px 10px darkgreen;
+box-shadow: 2px 2px 10px 2px black;
+margin: 140px 7% 0px 7%;
+}
+span{
+  animation: blink 1s infinite;
+  color: lime;
+}
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+h1.coderscafe {
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+  top: -190px
+}
+p.haven {
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  top: -190px
+}
+/*MATRIX*/
+#matx{
+  background: rgb(15,5,15);
+  color: rgba(0, 255, 0, .7);
+  height: 265px;
+  max-width: 430px;
+  min-width: 344px;
+  overflow: hidden;
+  text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  top: 18px;
+  margin-right: 333px;
+  margin-left: 32%
+}
+@-webkit-keyframes fading{
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes falling{
+  from {top: -250px;}
+  to {top: 388px;}
+}
+#matx div{
+  position: absolute;
+  top: 0;
+  text-transform: lowercase;
+-webkit-transform:rotate(90deg);
+-webkit-animation-name: falling, fading;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: normal;
+}
+/*Speed*/
+.t1{
+-webkit-animation-duration: 4s;
+}
+.t2{
+-webkit-animation-duration: 6s;
+}
+.t3{
+-webkit-animation-duration: 8s;
+}
+.t4{
+-webkit-animation-duration: 10s;
+}
+.t5{
+-webkit-animation-duration: 13s;
+}
+/*position*/
+#x1{
+  left: -90px;
+}
+#x2{
+  left: 25px;
+}
+#x3{
+  left: 60px;
+}
+#x4{
+  left: 80px;
+}
+#x5{
+  left: 110px;
+}
+#x6{
+  left: 140px;
+}
+#x7{
+  left: -150px;
+}
+#x8{
+  left: 185px;
+}
+#x9{
+  left: 195px;
+}
+#x10{
+  left: 250px;
+}
+#x11{
+  left: 290px;
+}
+#x12{
+  left: 310px;
+}
+#x13{
+  left: 350px;
+}
+#x14{
+  left: 390px;
+}
+#x15{
+  left: 430px;
+}
+#x16{
+  left: 470px;
+}
+#x17{
+  left: 490px;
+}
+#x18{
+  left: 520px;
+}
+#x19{
+  left: 550px;
+}
+/*Nav Bar*/
+.upperNav {
+  height: 55px;
+  background-color: gray;
+  font-family: Courier;
+}
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+.title, .subtitle{
+  margin-right: 155px ;
+  margin-bottom: 0px;
+}
+nav {
+	width: 110%;
+	list-style-type: none;
+	background-color: #242424;
+	list-style-type: none;
+	position: fixed;
+	text-align: center;
+  z-index: 3;
+}
+nav > ul {
+  list-style: none;
+  display: block;
+  background: #ddd;
+}
+nav > ul > li {
+  background-color: #242424;
+  overflow: hidden;
+  float: left;
+  width: 150px;
+  height: 65px;
+  line-height: 65px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: wheat;
+  cursor: pointer;
+  margin-left: 100px;
+}
+nav > ul > li:hover{
+  display: inline-block;
+  color: black;
+  overflow: visible;
+  display: block;
+  background-color: #200050;
+  }
+/*SideBars*/
+.sidebar-right{
+ background: black url("../images/sidebars/beans.jpg")no-repeat top right fixed;
+ background-size: contain;
+ float: right;
+ width: 100px;
+ height: 3000px;
+box-shadow: 2px 2px 10px 2px black;
+z-index: 3;
+}
+.sidebar-left{
+background: black url("../images/sidebars/beans.jpg") repeat-x top left fixed;
+ background-size: contain;
+float: left;
+height: 3000px;
+ width: 100px;
+ box-shadow: 2px 2px 10px 2px black;
+z-index: 3;
+}
+.aboutus {
+  text-align: center;
+  font-family: courier;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px lime;
+  margin-top: 100px;
+}
+/*Cafe Pic*/
+.cafePic {
+  background: url("../images/cafepic.jpeg") no-repeat center center;
+  background-size: contain;
+  width: 33%;
+  height: 300px;
+  margin: 60px 33% 0px 33%;
+}
+/*Our Mission*/
+.ourMission {
+margin: 35px 30% 0px 30%;
+font-family: courier;
+text-align: center;
+max-width: 40%;
+}
+p.ourMission {
+  color: red;
+}
+.coffeePic {
+  background: url("../images/coffeepic.jpeg") no-repeat center center;
+  background-size: contain;
+  width: 33%;
+  height: 300px;
+  margin: 60px 33% 0px 33%;
+}
+/*Our Coffee*/
+.ourCoffee {
+margin: 35px 30% 0px 30%;
+font-family: courier;
+text-align: center;
+max-width: 40%;
+}
+p.ourCoffee {
+  color: red;
+}
+
+
+.menuArea{
+  width:300vw;
+  height: 100vw;
+  display: block;
+  overflow-x: hidden;
+  padding-top: 35px;
+}
+.menuSec1{
+  background-color: blue;
+  height: 35vw;
+}
+.menuSec2{
+  background-color: red;
+  height: 35vw;
+}
+.menuSec3{
+  background-color: yellow;
+  height: 35vw;
+}
+.menuItem{
+  width: 28vw;
+  height: 29vw;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  left: 3vw;
+  top: 3vw;
+  margin-right: 3vw;
+  z-index: 1;
+}
+.menuImg{
+  width: 22vw;
+  height: 14vw;
+  background-color: yellowgreen;
+  left: 3vw;
+  position: relative;
+  top: 1vw;
+}
+.bottomOfMenu{
+  width: 28vw;
+  height: 12vw;
+  top: 17vw;
+  left: 0vw;
+  position: absolute;
+  background-color: gray;
+}
+.menuDescription{
+  width:5vw;
+}
+.menuDescription{
+  overflow: hidden;
+  height:7vw;
+  width: 28vw;
+  position: absolute;
+  padding: 1vw;
+}
+.menuButton{
+  background-color: red;
+  width:6vw;
+  height:3vw;
+  top: 8vw;
+  left: 20vw;
+  position: absolute;
+}
+.menuPricing{
+  background-color: blue;
+  width: 9vw;
+  height: 3vw;
+  top: 8vw;
+  left: 2vw;
+  position: absolute;
+}
+
+/*Carousel styling-START*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+#carousel-container {
+	height: 330px;
+	width: 600px;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+
+.carousel-indicators {
+	z-index: 1;
+}
+
+.carousel-inner img {
+	margin:auto;
+	width:100%;
+	display:block;
+}
+/*Carousel styling-END*/
