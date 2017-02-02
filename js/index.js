@@ -74,3 +74,32 @@ $(window).scroll(function(){
      /*responsive code end*/
  });
  //Carousel-END
+
+ //Make menu bar fixed after scroll
+ $(document).ready(function() {
+ var stickyNavTop = $('.menubar').offset().top;
+  
+ var stickyNav = function(){
+ var scrollTop = $(window).scrollTop();
+       
+ if (scrollTop > stickyNavTop) {
+     $('.menubar').addClass('sticky');
+     $('#jssor_1')
+       .css('margin-top', '50px');
+
+ } else {
+     $('.menubar').removeClass('sticky');
+     $('#jssor_1')
+       .css('margin-top', '0px');
+ }
+ };
+  
+ stickyNav();
+  
+ $(window).scroll(function() {
+   stickyNav();
+ });
+ });
+
+
+ //Make menu bar fixed after scroll-END
