@@ -20,7 +20,7 @@ function navScroll(){
 			}
 }*/
 
-$(window).scroll(function(){
+/*$(window).scroll(function(){
   if($(window).scrollTop() > 100){
       $('.title').fadeIn("slow");
   }
@@ -29,7 +29,7 @@ $(window).scroll(function(){
   if($(window).scrollTop() < 100){
       $(".title").fadeOut("fast");
   }
-});
+});*/
 
 //Carousel-START
  jQuery(document).ready(function ($) {
